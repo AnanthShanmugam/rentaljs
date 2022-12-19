@@ -1,9 +1,11 @@
 import React from "react";
 import Home from "../../screens/Home";
-import PostDetails from "../../screens/PostDetails";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { colors } from "../../modal/color";
 import { MaterialIcons } from "@expo/vector-icons";
+import Listing from "../../screens/Listing";
+import Chat from "../../screens/Chat";
+import Profile from "../../screens/Profile";
 
 const BottomTabNavigator = () => {
   const Tab = createBottomTabNavigator();
@@ -18,7 +20,7 @@ const BottomTabNavigator = () => {
         },
         tabBarShowLabel: false,
       }}
-      sceneContainerStyle={{ backgroundColor: "purple" }}
+      sceneContainerStyle={{ backgroundColor: "skyblue" }}
     >
       <Tab.Screen
         name="Explore"
@@ -32,7 +34,7 @@ const BottomTabNavigator = () => {
       />
       <Tab.Screen
         name="Listing"
-        component={PostDetails}
+        component={Listing}
         options={{
           tabBarIcon: ({ color }) => (
             <MaterialIcons
@@ -45,7 +47,7 @@ const BottomTabNavigator = () => {
       />
       <Tab.Screen
         name="Chat"
-        component={Home}
+        component={Chat}
         options={{
           tabBarIcon: ({ color }) => (
             <MaterialIcons name="message" size={24} color={colors.secondary} />
@@ -54,7 +56,7 @@ const BottomTabNavigator = () => {
       />
       <Tab.Screen
         name="Profile"
-        component={Home}
+        component={Profile}
         options={{
           tabBarIcon: ({ color }) => (
             <MaterialIcons

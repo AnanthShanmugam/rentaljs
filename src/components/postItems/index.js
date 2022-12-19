@@ -19,7 +19,7 @@ const PostItems = () => {
         />
         <View style={styles.postContentWrap}>
           <View>
-            <Text style={styles.postTitle}>Apple MAcbook</Text>
+            <Text style={styles.postTitle}>Apple Macbook</Text>
             <Text style={styles.postLocation}>New York</Text>
           </View>
           <Text style={styles.postValue}>$ 200 / day</Text>

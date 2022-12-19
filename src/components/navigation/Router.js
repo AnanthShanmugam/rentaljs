@@ -12,7 +12,7 @@ const Route = () => {
 
   return (
     <NavigationContainer>
-        <Stack.Navigator screenOptions={{cardStyle: {backgroundColor: 'purple'}}}>
+        <Stack.Navigator>
             <Stack.Screen name="Home" component={BottomTabNavigator} options={{headerShown: false}}/>
             <Stack.Screen name="Post Details" component={PostDetails} options={{headerShown: false}}/>
         </Stack.Navigator>
