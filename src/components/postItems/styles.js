@@ -4,7 +4,6 @@ import { colors } from "../../modal/color";
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fec85c60",
     marginBottom: 10,
     paddingTop: 20,
   },

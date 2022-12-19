@@ -1,19 +1,22 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View, Image, SafeAreaView, Platform } from "react-native";
-import PostItems from "./src/components/postItems";
+import { StyleSheet, Platform } from "react-native";
+import SafeAreaView, { SafeAreaProvider } from "react-native-safe-area-view";
+import Route from "./src/components/navigation/Router";
 
 export default function App() {
   return (
-    <SafeAreaView style={styles.droidSafeAreaView}>
-      <StatusBar style="auto" backgroundColor="orange" />
-      <PostItems />
-    </SafeAreaView>
+    <SafeAreaProvider>
+      <SafeAreaView style={styles.droidSafeAreaView}>
+        <StatusBar style="auto" backgroundColor="orange" />
+        <Route />
+      </SafeAreaView>
+    </SafeAreaProvider>
   );
 }
 
 const styles = StyleSheet.create({
-  droidSafeAreaView:{
-    flex:1,
+  droidSafeAreaView: {
+    flex: 1,
     paddingTop: Platform.OS === "android" ? 25 : 0,
-  }
+  },
 });
