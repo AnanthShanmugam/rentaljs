@@ -1,30 +1,25 @@
 import React, { useState } from "react";
-import {
-  Text,
-  View,
-  Image,
-  Pressable,
-} from "react-native";
-import styles from "./styles";
+import { Text, View, Image, StyleSheet } from "react-native";
+import styles from './styles';
+
 const PostItems = () => {
   return (
-    <Pressable
-      style={styles.container}>
+    <View style={styles.container}>
       <View style={styles.postWrap}>
         <Image
-          source={{
-            uri:
-              "https://dnezpuwttqdfg.cloudfront.net/fit-in/400x400/public/"}}
-          style={styles.postImage}></Image>
+          source={{ uri: "https://picsum.photos/id/2/300/300" }}
+          style={styles.postImage}
+        />
         <View style={styles.postContentWrap}>
           <View>
-            <Text style={styles.postTitle}>TEST</Text>
-            <Text style={styles.postPlace}>New york</Text>
+            <Text style={styles.postTitle}>Le</Text>
+            <Text style={styles.postLocation}>New York</Text>
           </View>
-          <Text style={styles.postValue}>$100 / Day</Text>
+          <Text style={styles.postValue}>$ 200 / day</Text>
         </View>
       </View>
-    </Pressable>
+    </View>
   );
 };
+
 export default PostItems;
