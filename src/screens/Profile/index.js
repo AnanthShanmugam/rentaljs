@@ -1,5 +1,15 @@
-import { View, Text, Button } from "react-native";
-import React from "react";
+import { View, Text } from "react-native";
+
+
+
+export default function Profile() {
+  return (
+    <View>
+      <Text>Profile</Text>
+    </View>
+  );
+}
+
 
 /* function SignOutButton() {
   const { signOut, authStatus, user } = useAuthenticator();
@@ -11,13 +21,7 @@ import React from "react";
     </View>
   );
 }
- */
 
-export default function Profile() {
-  return (
-    <View>
-      <Text> Profile </Text>
-{/*       <SignOutButton />
- */}    </View>
-  );
-}
+       <SignOutButton />
+ 
+ */

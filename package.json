@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@aws-amplify/cli": "^10.5.2",
+    "@aws-amplify/ui-react": "^4.2.1",
     "@aws-amplify/ui-react-native": "^1.1.4",
     "@expo/vector-icons": "^13.0.0",
     "@expo/webpack-config": "^0.17.2",
