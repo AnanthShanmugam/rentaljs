@@ -1,8 +1,7 @@
 import { View, Text, Button } from "react-native";
 import React from "react";
-import { useAuthenticator } from "@aws-amplify/ui-react-native";
 
-function SignOutButton() {
+/* function SignOutButton() {
   const { signOut, authStatus, user } = useAuthenticator();
 
   return (
@@ -12,12 +11,13 @@ function SignOutButton() {
     </View>
   );
 }
+ */
 
 export default function Profile() {
   return (
     <View>
       <Text> Profile </Text>
-      <SignOutButton />
-    </View>
+{/*       <SignOutButton />
+ */}    </View>
   );
 }
